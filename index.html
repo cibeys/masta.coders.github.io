@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- =====COSTUM CSS===== -->
     <link rel="stylesheet" href="./style.css" />
 
     <!-- =====BOX ICONS===== -->
@@ -12,27 +13,38 @@
       rel="stylesheet"
     />
 
+    <!-- ===== IONICONS ===== -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
     <title>MastaCoders</title>
   </head>
   <body>
     <!--===== HEADER =====-->
     <header class="l-header">
       <nav class="nav bd-grid">
-          <div class="nav__toggle" id="nav-toggle">
+        <div class="nav__toggle" id="nav-toggle">
           <i class="bx bx-menu"></i>
         </div>
         <div>
-          <a href="#" class="nav__logo">MastaCoders</a>
+          <a href="#home" class="nav__logo">Masta<span>Coders</span></a>
         </div>
         <div class="nav__menu" id="nav-menu">
-          <h1 class="nav__menu-logo">MastaCoders</h1>
+          <a href="" class="nav__menu-logo">
+            Masta<span>Coders</span>
+          </a>
           <input type="checkbox" id="darkmode" />
           <label for="darkmode" class="icon">
-            <i class="bx bxs-sun"></i>
+            <i style="color: var(--secondary-color);" class="bx bxs-sun"></i>
             <i class="bx bxs-moon"></i>
           </label>
           <div class="nav__close" id="nav-close">
-            <i class="bx bx-x-circle"></i>
+            <i class="bx bx-x"></i>
           </div>
           <ul class="nav__list">
             <li class="nav__item">
@@ -45,7 +57,7 @@
               <a href="#skills" class="nav__link">Skills</a>
             </li>
             <li class="nav__item">
-              <a href="#work" class="nav__link">Work</a>
+              <a href="#project" class="nav__link">project</a>
             </li>
             <li class="nav__item">
               <a href="#contact" class="nav__link">Contact</a>
@@ -60,22 +72,29 @@
       <section class="home bd-grid" id="home">
         <div class="home__data">
           <h2 class="home__title">
-            Hi,<br />I'am Tirta Manik <br /><span
+            Hi, I'am <br> Tirta Manik <br /><span
               class="home__title-color"
             ></span>
           </h2>
 
-          <a href="#" class="button">Contact</a>
+          <a href="#contact" class="button">Contact</a>
         </div>
 
         <div class="home__social">
           <a href="" class="home__social-icon"
-            ><i class="bx bxl-linkedin"></i
+            ><ion-icon name="logo-tiktok"></ion-icon></a>
+          <a href="" target="_blank" class="home__social-icon"
+            ><i class="bx bxl-codepen"></i
           ></a>
-          <a href="" class="home__social-icon"
-            ><i class="bx bxl-behance"></i
+          <a
+            href="https://github.com/T2M8"
+            target="_blank"
+            class="home__social-icon"
+            ><i class="bx bxl-github"></i
           ></a>
-          <a href="" class="home__social-icon"><i class="bx bxl-github"></i></a>
+          <a href="" target="_blank" class="home__social-icon"
+            ><i class="bx bxl-youtube"></i
+          ></a>
         </div>
 
         <div class="home__img">
@@ -94,12 +113,7 @@
               <path
                 d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
               />
-              <image
-                class="home__blob-img"
-                x="50"
-                y="60"
-                href="./tirta.png"
-              />
+              <image class="home__blob-img" x="50" y="60" href="./tirta.png" />
             </g>
           </svg>
         </div>
@@ -111,16 +125,13 @@
 
         <div class="about__container bd-grid">
           <div class="about__img">
-            <img src="./tirta-2.png" alt="" />
+            <img src="./IMG_20230917_154907.jpg" alt="" />
           </div>
 
           <div>
             <h2 class="about__subtitle">I'am Tirta Manik</h2>
             <p class="about__text">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat
-              ut voluptates soluta, aut earum nemo recusandae cumque
-              perferendis! Recusandae alias accusamus atque.
+              I am an enthusiastic vocational school student and eager to learn the world of technology and design. In my educational journey, I have learned various skills such as web development, graphic design, and programming languages. I believe that technology has great potential to shape the future, and I strive to continually improve my skills in this area.
             </p>
           </div>
         </div>
@@ -145,7 +156,7 @@
               </div>
               <div class="skills__bar skills__html"></div>
               <div>
-                <span class="skills__percentage">95%</span>
+                <span class="skills__percentage">75%</span>
               </div>
             </div>
             <div class="skills__data">
@@ -155,7 +166,7 @@
               </div>
               <div class="skills__bar skills__css"></div>
               <div>
-                <span class="skills__percentage">85%</span>
+                <span class="skills__percentage">60%</span>
               </div>
             </div>
             <div class="skills__data">
@@ -165,7 +176,7 @@
               </div>
               <div class="skills__bar skills__js"></div>
               <div>
-                <span class="skills__percentage">65%</span>
+                <span class="skills__percentage">30%</span>
               </div>
             </div>
             <div class="skills__data">
@@ -175,39 +186,39 @@
               </div>
               <div class="skills__bar skills__ux"></div>
               <div>
-                <span class="skills__percentage">85%</span>
+                <span class="skills__percentage">20%</span>
               </div>
             </div>
           </div>
 
           <div>
-            <img src="assets/img/work3.jpg" alt="" class="skills__img" />
+            <img src="images (5).jpeg" alt="" class="skills__img" />
           </div>
         </div>
       </section>
 
-      <!--===== WORK =====-->
-      <section class="work section" id="work">
-        <h2 class="section-title">Work</h2>
+      <!--===== Project =====-->
+      <section class="work section" id="project">
+        <h2 class="section-title">Project</h2>
 
         <div class="work__container bd-grid">
           <a href="" class="work__img">
-            <img src="assets/img/work1.jpg" alt="" />
+            <img src="project-1.png" alt="" />
           </a>
           <a href="" class="work__img">
-            <img src="assets/img/work2.jpg" alt="" />
+            <img src="project-2.png" alt="" />
           </a>
           <a href="" class="work__img">
-            <img src="assets/img/work3.jpg" alt="" />
+            <img src="project-3.png" alt="" />
           </a>
           <a href="" class="work__img">
-            <img src="assets/img/work4.jpg" alt="" />
+            <img src="project-4.png" alt="" />
           </a>
           <a href="" class="work__img">
-            <img src="assets/img/work5.jpg" alt="" />
+            <img src="project-5.png" alt="" />
           </a>
           <a href="" class="work__img">
-            <img src="assets/img/work6.jpg" alt="" />
+            <img src="project-6.png" alt="" />
           </a>
         </div>
       </section>
@@ -229,7 +240,7 @@
             ></textarea>
             <input
               type="button"
-              value="Enviar"
+              value="Sumbit"
               class="contact__button button"
             />
           </form>
@@ -245,7 +256,7 @@
         <a href="#" class="footer__icon"><i class="bx bxl-instagram"></i></a>
         <a href="#" class="footer__icon"><i class="bx bxl-twitter"></i></a>
       </div>
-      <p class="footer__copy">&#169; MastaCoders. All rigths reserved</p>
+      <p class="footer__copy">copyright &#169; MastaCoders. All rigths reserved</p>
     </footer>
 
     <!--===== SCROLL REVEAL =====-->
