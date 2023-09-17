@@ -1,5 +1,6 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Mooli&family=Nunito:wght@1000&display=swap');
 /*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
@@ -8,10 +9,12 @@
   /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
   /* HSL color mode */
   --hue-color: 224;
-  --first-color: hsl(var(--hue-color), 89%, 60%);
   --second-color: hsl(var(--hue-color), 56%, 12%);
   /*===== Fuente y tipografia =====*/
   --body-font: 'Poppins', sans-serif;
+  --Arvo:'Arvo',sans-serif;
+  --Mooli:'Mooli', sans-serif;
+  --Nunito:'Nunito',sans-serif;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: .938rem;
@@ -24,6 +27,18 @@
   /*===== z index =====*/
   --z-back: -10;
   --z-fixed: 100;
+    /*===== Colores =====*/
+  --first-color: #3664f4;
+  --dark-color: #070d1f;
+  --dark-color-alt: #282b3a;
+  --white-color: #e6e7e9;
+  --cyan-color: cyan;
+  --primary-color: #a855f7;
+  --primary-color-dark: #9333ea;
+  --secondary-color: #ca8a04;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --extra-light: #faf5ff;
 }
 
 @media screen and (min-width: 968px) {
@@ -46,15 +61,15 @@ html {
 }
 
 body.dark{
-  background: var(--second-color);
+  background: var(--dark-color);
   color: white;
 }
 body.dark .l-header{
-  background: var(--second-color);
+  background: var(--dark-color);
   color: white;
 }
 body.dark .nav__menu{
-  background: var(--second-color);
+  background: var(--dark-color);
   color: white;
 }
 body.dark .nav__close{
@@ -72,14 +87,25 @@ body.dark .nav__link{
 body.dark .nav__toggle{
  color: white;
 }
+body.dark .section-title{
+ color: white;
+}
+body.dark .home__social-icon{
+ color: white;
+}
 body.dark .nav__logo{
  color: white;
 }
+body.dark .nav__logo{
+ color: white;
+}
+
+
 body {
   margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  color: var(--second-color);
+  color: var(--dark-color);
 }
 
 h1, h2, p {
@@ -158,7 +184,7 @@ img {
 }
 
 .nav__list{
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 #darkmode,.icon .bxs-moon{
@@ -167,9 +193,9 @@ img {
 
 .nav__close{
   position: absolute;
-  top: 10px;
-  right: -30px;
-  font-size: 1.5rem;
+  top: 0;
+  right: 5px;
+  font-size: 35px;
   color: black;
   cursor: pointer;
 }
@@ -180,15 +206,19 @@ img {
   left: 5px;
   font-size: 20px;
   color: var(--second-color);
+  font-family: var(--Arvo);
+  font-weight: 200;
 }
-
+.nav__menu-logo span{
+  color: red;
+}
 .icon{
   position: absolute;
-  top: 10px;
-  right: 5px;
+  top: 7px;
+  right: 70px;
   color: var(--second-color);
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 25px;
 }
 
 
@@ -204,8 +234,8 @@ img {
     position: fixed;
     top:0;
     left: -100%;
-    width: 50%;
-    height: 100%;
+    width: 70%;
+    height: 100vh;
     padding: 2rem;
     background-color: white;
     transition: .5s;
@@ -237,7 +267,15 @@ img {
 
 .nav__logo {
   color: var(--second-color);
+  font-family: var(--Arvo);
+  font-weight: 600;
+  font-size: 20px;
 }
+
+.nav__logo span{
+  color: red;
+}
+
 .nav__toggle {
   color: var(--second-color);
   font-size: 1.5rem;
@@ -296,19 +334,20 @@ img {
   color: var(--second-color);
 }
 
-.home__social-icon:hover {
-  color: var(--first-color);
+.home__social-icon:nth-child(4):hover{
+  color: red;
 }
 
 .home__img {
   position: absolute;
   right: 0;
-  bottom: 0;
+  top: 50%;
   width: 260px;
+  
 }
 
 .home__blob {
-  fill: var(--first-color);
+  fill: var(--second-color);
 }
 
 .home__blob-img {
@@ -322,7 +361,7 @@ img {
   color: #fff;
   padding: .75rem 2.5rem;
   font-weight: var(--font-semi);
-  border-radius: .5rem;
+  border-radius: .7rem;
   transition: .3s;
 }
 
@@ -397,26 +436,26 @@ img {
 }
 
 .skills__html {
-  width: 95%;
+  width: 75%;
 }
 
 .skills__css {
-  width: 85%;
+  width: 60%;
 }
 
 .skills__js {
-  width: 65%;
+  width: 30%;
 }
 
 .skills__ux {
-  width: 85%;
+  width: 20%;
 }
 
 .skills__img {
   border-radius: .5rem;
 }
 
-/* ===== WORK =====*/
+/* ===== project =====*/
 .work__container {
   row-gap: 2rem;
 }
@@ -558,8 +597,8 @@ img {
     position: fixed;
     top: 0;
     left: -100%;
-    width: 50%;
-    height: 100%;
+    width: 75%;
+    height: 100vh;
     padding: 2rem;
     background-color: white;
     transition: .5s;
@@ -587,26 +626,34 @@ img {
   top: 2rem;
   background-color: var(--first-color);
  }
+ 
+ .nav__menu-logo{
+   position: absolute;
+   top: 23px;
+   left: 4%;
+ }
+ 
  .icon{
    position: absolute;
-   top:10px;
-   right: 65%;
+   top: 22px;
+   right: 73%;
  }
  .nav__close{
    position: absolute;
-   top:10px;
-   right: 17px;
+   top: 6px;
+   right: 5px;
+   font-size: 3rem;
    color:var(--second-color);
  }
   .nav__toggle{
     display: inline-block;
   }
   .home {
-    padding: 8rem 0 2rem;
+    padding: 8rem 0.2rem;
   }
   .home__img {
     width: 400px;
-    bottom: 10%;
+    top: 20%;
   }
   .about__container {
     padding-top: 2rem;
