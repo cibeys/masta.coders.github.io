@@ -334,7 +334,7 @@ img {
   color: var(--second-color);
 }
 
-.home__social-icon:nth-child(4):hover{
+.home__social-icon:nth-child(4){
   color: red;
 }
 
