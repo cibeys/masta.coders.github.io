@@ -334,13 +334,13 @@ img {
   color: var(--second-color);
 }
 
-.home__social-icon:nth-child(4){
+.home__social-icon:nth-child(4):hover{
   color: red;
 }
 
 .home__img {
   position: absolute;
-  right: 0;
+  right: 2%;
   top: 50%;
   width: 260px;
   
@@ -348,11 +348,22 @@ img {
 
 .home__blob {
   fill: var(--second-color);
+  animation: moveUpDown 2s ease-in-out infinite;
 }
 
 .home__blob-img {
   width: 360px;
 }
+/* Definisikan animasi */
+@keyframes moveUpDown {
+  0%, 100% {
+    transform: translateY(0); /* Posisi awal */
+  }
+  50% {
+    transform: translateY(-20px); /* Posisi tengah (ke atas) */
+  }
+}
+
 
 /*BUTTONS*/
 .button {
@@ -675,7 +686,7 @@ img {
   .show{
     left: 0;
   }
-}
+
 
 @media screen and (min-width: 992px) {
   .bd-grid {
@@ -688,4 +699,4 @@ img {
   .home__img {
     width: 450px;
   }
-}
+  }
