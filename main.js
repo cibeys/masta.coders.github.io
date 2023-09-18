@@ -64,7 +64,7 @@ sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200});
 
 /*====  efekmengetik  ====*/
 const dynamicText = document.querySelector("h2 span");
-const words = ["frontend", "backend", "software developer", "softwaer engineer"];
+const words = ["frontend", "frontend", "frontend", "frontend"];
 // Variables to track the position and deletion status of the word
 let wordIndex = 0;
 let charIndex = 0;
